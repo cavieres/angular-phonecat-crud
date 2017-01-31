@@ -9,6 +9,9 @@ angular.
           method: 'GET',
           params: {phoneId: ''},
           isArray: true
+        },
+        update: {
+            method: 'PUT'
         }
       });
     }

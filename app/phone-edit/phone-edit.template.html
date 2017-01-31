@@ -1,0 +1,13 @@
+﻿<div class="container">
+    <p>Edit Phone</p>
+
+    <div>Id: <input ng-model="$ctrl.phoneData.Id" disabled /></div>
+    <div>Additional Features: <input ng-model="$ctrl.phoneData.additionalFeatures" /></div>
+    <div>Description: <input ng-model="$ctrl.phoneData.description" /></div>
+    <div>Name: <input ng-model="$ctrl.phoneData.name" /></div>
+
+    <div>
+        <input type="button" ng-click="$ctrl.editPhone()" value="Edit phone" />
+        <input type="button" ng-click="$ctrl.deletePhone()" value="Delete phone" />
+    </div>
+</div>
