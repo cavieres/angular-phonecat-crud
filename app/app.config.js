@@ -13,6 +13,9 @@ angular.
         when('/phones/:phoneId', {
           template: '<phone-detail></phone-detail>'
         }).
+        when('/phones-new', {
+            template: '<phone-new></phone-new>'
+        }).
         otherwise('/phones');
     }
   ]);
