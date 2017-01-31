@@ -3,11 +3,11 @@
 angular.
   module('core.phone').
   factory('Phone', ['$resource',
-    function($resource) {
-      return $resource('phones/:phoneId.json', {}, {
+    function ($resource) {
+        return $resource('http://localhost:2224/api/phones/:phoneId', {}, {
         query: {
           method: 'GET',
-          params: {phoneId: 'phones'},
+          params: {phoneId: ''},
           isArray: true
         }
       });
